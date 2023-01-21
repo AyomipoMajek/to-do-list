@@ -137,6 +137,7 @@ form i {
 .check .goes {
   display: none;
 }
+
 .check #checked {
   display: block;
   margin-left: 7px;
