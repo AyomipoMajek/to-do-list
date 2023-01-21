@@ -1,9 +1,8 @@
-import { updateStatus } from './modules/status.js';
-
-const taskList = document.getElementById('task-list');
+/*const taskList = document.getElementById('task-list');
 const form = document.querySelector('#form');
 
 let tasks = [];
+// Function to render the task list to the DOM
 function renderTasks() {
   taskList.innerHTML = '';
   tasks.forEach((task, index) => {
@@ -21,12 +20,15 @@ function renderTasks() {
       </button>
     `;
     taskList.appendChild(li);
+    // Add event listener to change task status when checkbox is clicked
     const checkbox = li.querySelector('#task' + index);
     checkbox.addEventListener('change', () => {
       updateStatus(task, index);
       task.completed = checkbox.checked;
       updateLocalStorage();
     });
+    
+    // Add event listener to make task editable when pen icon is clicked
     const pen = li.querySelector('#pen');
     const worr = li.querySelector('#worr');
     const edit = li.querySelector('#word');
@@ -42,6 +44,7 @@ function renderTasks() {
         updateLocalStorage();
       });
     });
+    // Add event listener to delete task when times icon is clicked
     const times = li.querySelector('#times');
     times.addEventListener('click', () => {
       taskList.removeChild(li);
@@ -54,39 +57,4 @@ function renderTasks() {
   });
 }
 
-function updateLocalStorage() {
-  localStorage.setItem('tasks', JSON.stringify(tasks));
-}
-
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const input = document.querySelector('input');
-  if (input.value === '') { return; }
-  const task = {
-    description: input.value,
-    completed: false,
-    index: tasks.length + 1,
-  };
-
-  tasks.push(task);
-  renderTasks();
-  input.value = '';
-  updateLocalStorage();
-});
-
-window.addEventListener('load', () => {
-  const reshow = JSON.parse(localStorage.getItem('tasks'));
-  tasks = tasks.concat(reshow)
-  renderTasks();
-});
-
-const clearCompletedButton = document.getElementById('clear-completed');
-clearCompletedButton.addEventListener('click', clearCompleted);
-function clearCompleted() {
-  tasks = tasks.filter(task => !task.completed);
-  updateLocalStorage();
-  renderTasks();
-}
-
-export { updateLocalStorage, renderTasks }
-
+export { renderTasks, tasks, taskList, form }*/
