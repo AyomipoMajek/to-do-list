@@ -5,7 +5,9 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "start": "webpack serve --open",
+    "watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -30,10 +32,13 @@
     "stylelint-csstree-validator": "^1.9.0",
     "stylelint-scss": "^3.21.0",
     "webpack": "^5.75.0",
-    "webpack-cli": "^5.0.1"
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
-    "lodash": "^4.17.21"
+    "css-loader": "^6.7.3",
+    "lodash": "^4.17.21",
+    "style-loader": "^3.3.1"
   },
   "main": "webpack.config.js"
 }

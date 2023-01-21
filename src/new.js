@@ -1,3 +1,4 @@
+import './style.css';
 import { updateStatus } from './modules/status.js';
 
 const taskList = document.getElementById('task-list');
@@ -76,8 +77,8 @@ form.addEventListener('submit', (e) => {
 
 window.addEventListener('load', () => {
   const reshow = JSON.parse(localStorage.getItem('tasks'));
-  tasks = tasks.concat(reshow)
-  renderTasks();
+  if (reshow!==null) renderTasks();
+  
 });
 
 const clearCompletedButton = document.getElementById('clear-completed');
