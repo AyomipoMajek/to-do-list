@@ -60,11 +60,11 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [To Do list: add & remove] <a name="about-project"></a>
+# 📖 [To Do list: interactive list] <a name="about-project"></a>
 
 > Describe your project in 1 or 2 sentences.
 
-**[To Do list: list structure]** is a JavaScript solo project where a daily todo list directory is created
+**[To Do list: interactive list]** is a JavaScript solo project where a daily todo list directory is created and fully functional
 
 ## 🛠 Built With <a name="VS Code"></a>
 
