@@ -2,16 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: Poppins, sans-serif;
 }
 
 body {
-  background-color: rgb(231, 231, 231);
-}
-
-.todo {
   box-sizing: border-box;
   border-style: solid;
+  border-radius: 7px;
   border-color: #cbcbcb;
   margin-top: 80px;
   margin-left: 20px;
@@ -20,103 +17,132 @@ body {
   background-color: #fff;
 }
 
-.heading {
+h1 {
+  font-size: 18px;
+  padding-left: 5px;
+  border-bottom: solid;
+  border-color: #cbcbcb;
+  background-color: #cbcbcb;
+}
+
+form {
+  width: 100%;
   display: flex;
-  border-bottom: solid;
-  border-color: #cbcbcb;
-  padding-left: 10px;
   justify-content: space-between;
-}
-
-.reload {
-  margin-right: 10px;
   margin-top: 10px;
-  height: 20px;
-  border: none;
-  background: #fff;
-}
-
-input {
-  border: none;
-  font-style: italic;
-  outline: none;
-  padding-left: 10px;
-}
-
-.options {
-  border: none;
-  display: none;
-}
-
-#form {
+  background: none;
+  padding-left: 5px;
+  padding-bottom: 10px;
   border-bottom: solid;
   border-color: #cbcbcb;
+}
+
+.fa-arrows-rotate {
+  padding-right: 5px;
+}
+
+form input {
+  width: 95%;
+  height: 100%;
+  font-style: italic;
+  border: none;
+  outline: none;
 }
 
 form button {
-  margin-right: 10px;
+  outline: none;
+  background-color: transparent;
   border: none;
-  background-color: #fff;
-  cursor: pointer;
 }
 
-.formclass {
+form i {
+  font-size: 16px;
+}
+
+.each {
   display: flex;
   justify-content: space-between;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  align-items: center;
 }
 
-li {
-  list-style-type: none;
-  border-bottom: solid;
-  border-color: #cbcbcb;
-  padding-left: 10px;
-  display: flex;
-  justify-content: space-between;
+#tasks {
+  width: 100%;
+  height: 10px;
+  margin: 0 10px;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  padding: 10px 8px;
 }
 
-label {
-  padding-left: 10px;
+.item {
+  height: 15px;
+  width: 20px;
+  position: relative;
+}
+
+.goes {
+  width: 100%;
+  height: 100%;
+  border: 2px solid gray;
+  background-color: transparent;
+  margin-left: 5px;
+}
+
+.fa-ellipsis-vertical {
+  margin-right: 10px;
+}
+
+.item #checked {
+  color: blue;
+  display: none;
+  font-size: 15px;
+}
+
+.it i {
+  display: block;
+  position: absolute;
+  top: 0;
+}
+
+.it .white {
+  display: none;
+}
+
+#trash {
+  display: none;
+}
+
+.ic #trash {
+  display: block;
+  margin-right: 5px;
+}
+
+.ic #more {
+  display: none;
+}
+
+.come {
+  text-align: center;
+  background-color: rgb(203 203 203);
+  margin-top: 5px;
 }
 
 #clear {
+  background: transparent;
+  outline: none;
   border: none;
-  width: 100%;
-  background-color: #efeded;
-  height: 45px;
-  cursor: pointer;
 }
 
-.delete {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 2px 2px;
-  border: none;
-  background: none;
+.check .goes {
+  display: none;
 }
 
-.edit {
-  margin-top: 10px;
-  margin-bottom: 10px;
+.check #checked {
+  display: block;
+  margin-left: 7px;
 }
 
-.fa-times {
-  margin-right: 10px;
-  border: solid;
-  background-color: #efeded;
-  border-color: #cbcbcb;
-  border-radius: 2px;
-  padding: 2px 4px;
-  cursor: pointer;
-}
-
-.fa-pen {
-  margin-right: 5px;
-  border: solid;
-  background-color: #efeded;
-  border-color: #cbcbcb;
-  border-radius: 2px;
-  padding: 2px 2px;
-  cursor: pointer;
+.line {
+  text-decoration: line-through;
 }
