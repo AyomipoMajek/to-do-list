@@ -156,79 +156,85 @@ form i {
   padding: 15px;
 }
 
-@media (min-width: 768px){
-body {
-  border-radius: 16px;
-  border-color: #cbcbcb;
-  margin-top: 80px;
-  margin-left: 50px;
-  margin-right: 50px;
-  line-height: 60px;
-  background-color: rgb(106, 96, 133);
-  box-shadow: 8px 8px 10px rgb(49, 46, 46);
-}
+@media (min-width: 768px) {
+  body {
+    border-radius: 16px;
+    border-color: #cbcbcb;
+    margin-top: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
+    line-height: 60px;
+    background-color: rgb(106, 96, 133);
+    box-shadow: 8px 8px 10px rgb(49, 46, 46);
+  }
 
-h1 {
-  font-size: 30px;
-  padding-left: 20px;
-  border-bottom: solid;
-  border-color: #cbcbcb;
-  background-color: #cbcbcb;
-  border-radius: 15px 15px 0 0;
-  padding: 10px;
-}
+  h1 {
+    font-size: 30px;
+    border-bottom: solid;
+    border-color: #cbcbcb;
+    background-color: #cbcbcb;
+    border-radius: 15px 15px 0 0;
+    padding: 10px;
+  }
 
-form {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 15px;
-  background: #fff;
-  padding-left: 5px;
-  padding-bottom: 15px;
-  border-bottom: solid;
-  border-color: #cbcbcb;
-}
+  form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    background: #fff;
+    padding-left: 5px;
+    padding-bottom: 15px;
+    border-bottom: solid;
+    border-color: #cbcbcb;
+  }
 
-form input {
-  width: 95%;
-  height: 100%;
-  font-style: italic;
-  border: none;
-  outline: none;
-  font-size: 15px;
-  padding-left: 20px;
-}
+  form input {
+    width: 95%;
+    height: 100%;
+    font-style: italic;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding-left: 20px;
+  }
 
-.each {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  .each {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-#tasks {
-  margin: 0 30px;
-  outline: none;
-  border: none;
-  font-size: 25px;
-  padding-bottom: 30px;
-}
+  #tasks {
+    margin: 0 30px;
+    outline: none;
+    border: none;
+    font-size: 25px;
+    padding-bottom: 30px;
+  }
 
-.goes {
-  margin-left: 20px;
-}
+  .goes {
+    margin-left: 20px;
+  }
 
-.fa-ellipsis-vertical {
-  margin-right: 20px;
-}
+  .fa-ellipsis-vertical {
+    margin-right: 20px;
+  }
 
-#clear {
-  font-size: 20px;
-}
+  #clear {
+    font-size: 20px;
+  }
 
-.come {
-  border-radius: 0 0 15px 15px;
-  padding: 10px;
-}
+  .come {
+    border-radius: 0 0 15px 15px;
+    padding: 10px;
+  }
 
+  .check #checked {
+    margin-left: 23px;
+  }
+
+  .ic #trash {
+    margin-right: 15px;
+  }
 }
